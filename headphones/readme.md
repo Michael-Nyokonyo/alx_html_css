@@ -16,7 +16,7 @@ To view the webpage, follow these steps:
 1. Download or clone this repository to your local machine.
 2. Open `index.html` in your browser.
 
-## How to Contribute
+## How to Contribute here
 
 1. Fork this repository.
 2. Create a new branch (`git checkout -b feature-branch`).
