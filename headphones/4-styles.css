@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Section Heading and Paragraph */
+.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Styles for Our Results Section */
+.our-results {
+    background-color: #eaeaea;
+    padding: 60px 20px;
+}
+
+.result {
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for 3D effect */
+    width: 100%;
+    max-width: 300px; /* Limits the width of each result */
+}
+
+.result img {
+    width: 100%; /* Makes the images responsive */
+    max-width: 200px; /* Limits the width of the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.result h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 1em;
+    color: #444;
+}
+
+/* Flexbox layout for results */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result {
+        width: 80%; /* Reduces width on mobile */
+        max-width: none;
+    }
+
+    .result img {
+        max-width: 150px; /* Adjust image size for mobile */
+    }
+}
+
+/* Styles for Additional Info Section */
+.additional-info {
+    background-color: #e8f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.additional-info h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.additional-info p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Styles for What We Do Section */
+.what-we-do {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for 3D effect */
+    flex: 1;
+    width: 100%;
+    max-width: 250px;
+}
+
+.service img {
+    width: 60px;
+    height: 60px;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.service p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Flexbox layout for services */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        max-width: none;
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #FF6565;
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Basic Styles */
+body {
+    font-family: var(--font-family);
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    background-image: url('/images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}
+
+/* Styles for Contact Us Section */
+.contact-us {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners for the box */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1em;
+    color: #555;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 40px 0; /* Increased padding for a larger footer */
+    text-align: center;
+    font-size: 1.2em; /* Bigger text for footer */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 15px; /* Space between the text and social media links */
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em; /* Larger font size for links */
+}
+
+footer .social-media a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
